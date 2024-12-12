@@ -1,0 +1,62 @@
+.acc-item {
+    box-shadow: 0 0 32px rgba(0,0,0,0.1);
+    padding: 24px;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    column-gap: 32px;
+    row-gap: 24px;
+    align-items: center;
+  }
+  
+.number, .headtext {
+    font-size: 24px;
+    font-weight: 500;
+    /* color: #1971c2; */
+}
+
+.number {
+    color: #868e96;
+}
+
+.down-icon {
+    height: 24px;
+    width: 24px;
+    color: #1971c2;
+}
+
+.down-icon:hover {
+    color: #228be6;
+    background-color: #228be617;
+    border-radius: 12px;
+}
+
+.hidden-box {
+    grid-column: 2; /* Without this, shows in 2nd row first column */
+    display: none;
+}
+
+.hidden-box p {
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.hidden-box ul {
+    color: #868e96;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column; /* Flip Flex to Column direction (default ofc row) */
+    gap: 12px;
+}
+
+.open {
+    border-top: 4px solid #1971c2;
+    color: #1971c2;
+}
+
+.open .hidden-box {
+    display: block;
+}
+
+.open .number {
+    color: #228be6;
+}
