@@ -50,13 +50,12 @@
 
 .open {
     border-top: 4px solid #1971c2;
-    color: #1971c2;
 }
 
 .open .hidden-box {
     display: block;
 }
 
-.open .number {
+.open .number, .open .headtext {
     color: #228be6;
 }
