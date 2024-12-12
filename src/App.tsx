@@ -31,6 +31,7 @@ function App() {
   const accList: Array<IAccordion> = [
     accItem,
     accItem,
+    accItem,
     accItem
   ]
 

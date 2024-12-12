@@ -15,7 +15,7 @@ export interface IAccordionItem {
 }
 
 const Accordion = ( {accList}: { accList: Array<IAccordion> } ) => {
-    const [open,setOpen]  = useState([false,false,false])
+    const [open,setOpen]  = useState(Array(accList.length).fill(false))
 
     const updateStatus = (pressIndex: number) => {
         setOpen(open.map((element, index) => pressIndex === index ? !element : element))
